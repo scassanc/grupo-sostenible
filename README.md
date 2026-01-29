@@ -1,4 +1,4 @@
-# EcoCarManager - Gestor de Vehículos Sostenible
+# CircularApp - Evaluador de circularidad de productos
 
 ## Derechos
 
