@@ -1,0 +1,147 @@
+@import "reset.css";
+
+/* VARIABLES */
+:root {
+	/* --color-background: oklch(92% 0.004 286.32); /* color-zinc-200 */
+	/* --color-foreground: oklch(37% 0.013 285.805); /* color-zinc-700 */
+	/* --color-muted-background: oklch(87.1% 0.006 286.286); /* color-zinc-300 */
+	/* --color-muted-foreground: oklch(44.2% 0.017 285.786); /* color-zinc-600 */
+	/* --color-primary: oklch(59.6% 0.145 163.225); /* color-emerald-600 */
+	/* --color-danger: oklch(57.7% 0.245 27.325); /* color-red-600 */
+	/* --color-border: oklch(92% 0.004 286.32); /* color-zinc-200 */
+
+	/* --color-shadow: rgba(0, 0, 0, 0.2); */
+	/* --color-highlight: rgba(255, 255, 255, 1); */
+
+	--color-background: oklch(21% 0.006 285.885); /* color-zinc-900 */
+	--color-foreground: oklch(96.7% 0.001 286.375); /* color-zinc-100 */
+	--color-muted-background: oklch(37% 0.013 285.805); /* color-zinc-700 */
+	--color-muted-foreground: oklch(70.5% 0.015 286.067); /* color-zinc-400 */
+	--color-primary: oklch(76.5% 0.177 163.223); /* color-emerald-400 */
+	--color-danger: oklch(70.4% 0.191 22.216); /* color-red-400 */
+	--color-border: oklch(14.1% 0.005 285.823); /* color-zinc-950 */
+
+	--color-shadow: rgba(0, 0, 0, 0.75);
+	--color-highlight: rgba(255, 255, 255, 0.2);
+
+	--shadow-raised:
+		2px 2px 6px var(--color-shadow),
+		-2px -2px 6px var(--color-highlight),
+		inset 0px 0px 0px var(--color-shadow),
+		inset 0px 0px 0px var(--color-highlight),
+		inset 1px 1px 2px var(--color-highlight),
+		inset -1px -1px 2px var(--color-shadow);
+	--shadow-inset:
+		1px 1px 2px var(--color-shadow),
+		-1px -1px 2px var(--color-highlight),
+		inset 2px 2px 6px var(--color-shadow),
+		inset -2px -2px 6px var(--color-highlight),
+		inset 0px 0px 0px var(--color-highlight),
+		inset 0px 0px 0px var(--color-shadow);
+}
+
+/* DEFAULT STYLES */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--color-background);
+	color: var(--color-foreground);
+}
+
+/* COMPONENTS */
+.button {
+	display: inline-flex;
+	border: 3px solid var(--color-border);
+	border-radius: 8px;
+	font-weight: 600;
+	padding: 8px 14px;
+	box-shadow: var(--shadow-raised);
+	transition: all 0.2s ease;
+	background: linear-gradient(
+		to top left,
+		hsl(from var(--color-muted-background) h s l / 0.05),
+		hsl(from var(--color-muted-background) h s l / 0.25)
+	);
+}
+.button:active {
+	box-shadow: var(--shadow-inset);
+	scale: 0.99;
+}
+.button.button-primary {
+	background: linear-gradient(
+		to top left,
+		hsl(from var(--color-primary) h s l / 0.05),
+		hsl(from var(--color-primary) h s l / 0.25)
+	);
+}
+
+.card {
+	border: 3px solid var(--color-border);
+	border-radius: 8px;
+	box-shadow: var(--shadow-raised);
+	transition: all 0.2s ease-in-out;
+	background: hsl(from var(--color-muted-background) h s l / 0.15);
+}
+.card.card-inset {
+	box-shadow: var(--shadow-inset);
+}
+.card .card-header {
+	padding: 18px;
+}
+.card .card-header h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--color-primary);
+}
+.card .card-header p {
+	font-size: 14px;
+	color: var(--color-muted-foreground);
+	margin-top: -4px;
+}
+.card .card-content {
+	padding: 0 18px 18px 18px;
+}
+.card .card-content p {
+	font-size: 14px;
+}
+
+/* HEADER */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	padding: 24px 0;
+	border-bottom: 1px solid var(--color-muted-background);
+	backdrop-filter: blur(12px);
+}
+
+.header div {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.header .home-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.header .home-link img {
+	height: 36px;
+	width: 36px;
+	padding: 6px;
+	border-radius: 8px;
+	background-color: var(--color-primary);
+}
+
+/* MAIN */
+.primary {
+	color: var(--color-primary);
+}
