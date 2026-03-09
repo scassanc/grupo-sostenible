@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economía Circular - CircularApp</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/economia-circular.css">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <nav class="nav">
+          <a href="/" class="home-link">
+            <img src="/assets/leaf.svg" alt="CircularApp Logo">
+            CircularApp
+          </a>
+          <ul class="nav-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/sostenibilidad/">Sostenibilidad</a></li>
+            <li><a href="/economia-circular/" class="active">Economía Circular</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="section">
+        <div>
+          <div class="section-header">
+            <span>Economía Circular</span>
+            <h2>Modelo Tradicional vs. Solución Circular</h2>
+            <p>Comprende cómo funciona el sector tecnológico y cómo CircularApp propone un cambio de paradigma.</p>
+          </div>
+
+          <div class="tabs-container">
+            <div class="tabs-header">
+              <button class="tab-button active" data-tab="modelo">Modelo Actual</button>
+              <button class="tab-button" data-tab="problemas">Problemas</button>
+              <button class="tab-button" data-tab="principios">Principios Circulares</button>
+              <button class="tab-button" data-tab="beneficios">Beneficios</button>
+            </div>
+
+            <div class="tabs-content">
+              <div class="tab-panel active" id="modelo">
+                <div class="tab-panel-content">
+                  <h3>¿Cómo funciona actualmente el modelo de producción y consumo en este sector?</h3>
+                  <p>El modelo tradicional de tecnología sigue un patrón lineal de "extraer-fabricar-consumir-tirar":</p>
+                  <ul class="tab-list">
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <strong>Extracción:</strong> Minerales raros y metales pesados se extraen de países en desarrollo, a menudo con impacto ambiental y social significativo.
+                    </li>
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <strong>Fabricación:</strong> Las empresas diseñan dispositivos con vida útil limitada, obsolescencia programada, y componentes no reparables.
+                    </li>
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <strong>Consumo:</strong> Los usuarios compran dispositivos nuevos cada 2-3 años, sin información sobre el impacto ambiental real.
+                    </li>
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <strong>Residuo:</strong> Los dispositivos viejos se convierten en e-waste, con solo el 17% siendo reciclados formalmente.
+                    </li>
+                  </ul>
+                  <p>Este modelo genera más de 57 millones de toneladas de residuos electrónicos anuales a nivel mundial.</p>
+                </div>
+              </div>
+
+              <div class="tab-panel" id="problemas">
+                <div class="tab-panel-content">
+                  <h3>¿Qué problemas presenta ese modelo clásico?</h3>
+                  <ul class="tab-list">
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <div>
+                        <strong>Obsolescencia programada</strong>
+                        <p>Los fabricantes diseñan dispositivos con vida útil corta, forzando reemplazos innecesarios.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <div>
+                        <strong>Falta de transparencia</strong>
+                        <p>Los consumidores no tienen acceso a información sobre reparabilidad, huella ambiental o durabilidad.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <div>
+                        <strong>Desechos electrónicos</strong>
+                        <p>Solo el 17.4% de los residuos electrónicos se reciclan formalmente; el resto termina en vertederos o se quema.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <div>
+                        <strong>Extracción insostenible</strong>
+                        <p>La minería de metales raros causa deforestación, contaminación de agua y violación de derechos humanos.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="/assets/circle-minus.svg" alt="Minus">
+                      <div>
+                        <strong>Altas emisiones de CO2</strong>
+                        <p>La fabricación de un smartphone genera entre 70-80 kg de CO2, mayormente durante la producción.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tab-panel" id="principios">
+                <div class="tab-panel-content">
+                  <h3>¿Qué principios de la economía circular aplica CircularApp?</h3>
+                  <div class="principles-grid">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Diseño para la durabilidad</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Evaluamos si los dispositivos están diseñados para durar, permitiendo reparación y actualizaciones.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Right to Repair</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Promovemos el derecho a reparar, informando sobre disponibilidad de piezas y documentación técnica.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Reutilización</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Recomendamos dispositivos reacondicionados como alternativa sostenible a la compra nueva.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Transparencia</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Proporcionamos datos claros sobre huella ambiental para decisiones de consumo responsables.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Extensión de vida útil</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Ayudamos a maximizar el uso de dispositivos existentes antes de reemplazar.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Consumo responsable</h4>
+                      </div>
+                      <div class="card-content">
+                        <p>Guiamos a los usuarios hacia decisiones de compra alineadas con la sostenibilidad.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-panel" id="beneficios">
+                <div class="tab-panel-content">
+                  <h3>¿Qué beneficios aporta frente al modelo tradicional?</h3>
+                  <div class="benefits-comparison">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Modelo Tradicional</h4>
+                      </div>
+                      <div class="card-content">
+                        <ul class="tab-list">
+                          <li>
+                            <img src="/assets/circle-minus.svg" alt="Minus">
+                            Compras frecuentes de dispositivos nuevos
+                          </li>
+                          <li>
+                            <img src="/assets/circle-minus.svg" alt="Minus">
+                            Alto coste económico a largo plazo
+                          </li>
+                          <li>
+                            <img src="/assets/circle-minus.svg" alt="Minus">
+                            Impacto ambiental muy elevado
+                          </li>
+                          <li>
+                            <img src="/assets/circle-minus.svg" alt="Minus">
+                            Dependencia de fabricantes
+                          </li>
+                          <li>
+                            <img src="/assets/circle-minus.svg" alt="Minus">
+                            Información opaca para consumidores
+                          </li>
+                          <li>
+                            <img src="/assets/circle-minus.svg" alt="Minus">
+                            Residuos electrónicos acumulados
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <h4>Con CircularApp</h4>
+                      </div>
+                      <div class="card-content">
+                        <ul class="tab-list">
+                          <li>
+                            <img src="/assets/circle-check.svg" alt="Check">
+                            Decisiones informadas de compra
+                          </li>
+                          <li>
+                            <img src="/assets/circle-check.svg" alt="Check">
+                            Ahorro económico significativo
+                          </li>
+                          <li>
+                            <img src="/assets/circle-check.svg" alt="Check">
+                            Reducción de huella ambiental
+                          </li>
+                          <li>
+                            <img src="/assets/circle-check.svg" alt="Check">
+                            Independencia del fabricante
+                          </li>
+                          <li>
+                            <img src="/assets/circle-check.svg" alt="Check">
+                            Transparencia total
+                          </li>
+                          <li>
+                            <img src="/assets/circle-check.svg" alt="Check">
+                            Menor generación de residuos
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="benefit-stats">
+                    <div class="card">
+                      <div class="card-content">
+                        <p class="benefit-stat-value">40%</p>
+                        <p class="benefit-stat-label">menos CO2 eligiendo reacondicionado</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-content">
+                        <p class="benefit-stat-value">70%</p>
+                        <p class="benefit-stat-label">ahorro frente a dispositivo nuevo</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-content">
+                        <p class="benefit-stat-value">3x</p>
+                        <p class="benefit-stat-label">más vida útil con buenas prácticas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

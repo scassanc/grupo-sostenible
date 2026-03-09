@@ -1,0 +1,200 @@
+/* TABS */
+.tabs-container {
+	margin-top: 64px;
+}
+
+.tabs-header {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tab-button {
+	padding: 12px 20px;
+	border: 3px solid var(--color-border);
+	border-radius: 8px;
+	background: hsl(from var(--color-muted-background) h s l / 0.15);
+	color: var(--color-muted-foreground);
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+	box-shadow: var(--shadow-raised);
+}
+
+.tab-button:hover {
+	background: hsl(from var(--color-primary) h s l / 0.1);
+	color: var(--color-foreground);
+}
+
+.tab-button.active {
+	background: hsl(from var(--color-primary) h s l / 0.2);
+	color: var(--color-primary);
+	border-color: var(--color-primary);
+	box-shadow: var(--shadow-inset);
+}
+
+.tabs-content {
+	margin-top: 32px;
+}
+
+.tab-panel {
+	display: none;
+}
+
+.tab-panel.active {
+	display: block;
+}
+
+.tab-panel-content {
+	border: 3px solid var(--color-border);
+	border-radius: 8px;
+	padding: 32px;
+	background: hsl(from var(--color-muted-background) h s l / 0.1);
+	box-shadow: var(--shadow-inset);
+}
+
+.tab-panel-content h3 {
+	font-size: 22px;
+	font-weight: bold;
+	color: var(--color-primary);
+	margin-bottom: 20px;
+}
+
+.tab-panel-content > p {
+	margin-bottom: 16px;
+	color: var(--color-foreground);
+	line-height: 1.6;
+}
+
+.tab-list {
+	list-style: none;
+	padding: 0;
+	margin: 16px 0;
+}
+
+.tab-list li {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--color-border);
+	color: var(--color-muted-foreground);
+	line-height: 1.5;
+}
+
+.tab-list li:last-child {
+	border-bottom: none;
+}
+
+.tab-list li img {
+	height: 16px;
+	width: 16px;
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.tab-list li strong {
+	color: var(--color-foreground);
+}
+
+.tab-list li div {
+	flex: 1;
+}
+
+.tab-list li div strong {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.tab-list li div p {
+	margin: 0;
+	font-size: 13px;
+}
+
+/* PRINCIPLES GRID */
+.principles-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin-top: 24px;
+}
+
+.principles-grid .card .card-header h4 {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--color-primary);
+}
+
+.principles-grid .card .card-content p {
+	font-size: 13px;
+	color: var(--color-muted-foreground);
+	line-height: 1.5;
+	margin: 0;
+}
+
+/* BENEFITS COMPARISON */
+.benefits-comparison {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+	margin: 24px 0;
+}
+
+.benefits-comparison .card .card-header h4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.benefits-comparison .card:first-child .card-header h4 {
+	color: var(--color-danger);
+}
+
+.benefits-comparison .card:last-child .card-header h4 {
+	color: var(--color-primary);
+}
+
+.benefits-comparison .card .card-content {
+	padding: 18px;
+}
+
+.benefits-comparison .card .card-content .tab-list li {
+	border-bottom: none;
+	padding: 6px 0;
+	font-size: 14px;
+}
+
+.benefits-comparison .card:first-child .card-content .tab-list li {
+	color: var(--color-muted-foreground);
+}
+
+.benefits-comparison .card:last-child .card-content .tab-list li {
+	color: var(--color-foreground);
+}
+
+.benefit-stats {
+	display: flex;
+	justify-content: space-around;
+	gap: 24px;
+	margin-top: 32px;
+	padding-top: 24px;
+	border-top: 2px solid var(--color-border);
+}
+
+.benefit-stats .card .card-content {
+	text-align: center;
+	padding: 12px;
+}
+
+.benefit-stat-value {
+	display: block;
+	font-size: 36px;
+	font-weight: bold;
+	color: var(--color-primary);
+}
+
+.benefit-stat-label {
+	font-size: 12px;
+	color: var(--color-muted-foreground);
+}
